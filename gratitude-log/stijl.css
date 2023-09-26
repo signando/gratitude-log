@@ -1,0 +1,1170 @@
+:root {
+    --primary-green: rgb(121, 190, 16);
+    --secundary-grey: rgb(116, 114, 114);
+    --third-grey: rgb(223, 223, 223);
+}
+
+body {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+}
+
+.header {
+    background-image: url(images/header-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0.5rem;
+}
+
+.banner {
+    order: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.5rem;
+}
+
+.banner h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
+.banner nav {
+    margin-right: 2rem;  
+}
+
+.banner nav a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: black;
+    font-weight: 700;
+}
+
+.banner nav a:last-of-type {
+    margin-right: 0;
+}
+
+.banner nav a:hover {
+    color: var(--primary-green);
+}
+
+.header h1 {
+    margin-top: 4rem;
+    justify-self: center;
+    text-align: center; 
+    font-size: 300%;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.header h1 + p {
+    margin: 0;
+    justify-self: center;
+    text-align: center;
+    color: white;
+    font-style: italic; 
+}
+
+.container-pieter {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    
+}
+
+.container-figure {
+    position: relative;
+    margin: 1rem 0;
+       
+}
+
+.container-figure figure {
+    margin: 0;
+    margin-left: 5rem;
+}
+
+.container-figure figure .pieter {
+    width: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+.container-figure p {
+    background-color: var(--primary-green);
+    color: white;
+    width: fit-content;
+    padding: 0.4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.3rem;
+    right: -0.3rem;
+    font-size: 70%;
+}
+
+.container-naam {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pieter-wordson {
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 0.4rem;
+}
+
+.container-naam p {
+    margin-left: 1rem;
+    color: white;
+    font-size: 70%;
+}
+
+.button-A {
+    width: fit-content;
+    justify-self: center;
+    padding: 1rem 3rem;
+    background-color: white;
+    margin-bottom: 3rem;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+.container-60 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section-daily-grat {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    margin-top: 3rem;
+    border-bottom: 1px solid var(--third-grey);
+}
+
+.section-daily-grat h1 {
+    justify-self: center;
+    text-align: center;
+    font-size: 230%;
+    margin-bottom: 1rem;
+}
+
+.section-daily-grat h1 + p {
+    justify-self: center;
+    text-align: center;
+    color: var(--secundary-grey);
+}
+
+.button-B {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: fit-content;
+    justify-self: center;
+    padding: 1rem 3rem;
+    background-color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    color: white;   
+}
+
+
+
+
+
+
+
+
+
+
+.get-inspired {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 2.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--third-grey);
+}
+
+.h1-koptext {
+    grid-column: 1 / 4;
+    justify-self: center;
+    text-align: center;
+    font-size: 230%;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+
+.p-text {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--secundary-grey);
+}
+
+.get-inspired article {
+    display: grid;
+    grid-template-columns: 3.5rem auto;
+    grid-template-rows: auto auto auto;
+}
+
+
+
+
+
+
+.aritcle-A h1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 80%;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 0.25rem;
+    align-self: end;
+    padding-top: 1rem; 
+}
+
+.aritcle-A h1 + p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 70%;
+    margin: 0;
+    margin-top: 0.25rem;
+    align-self: start;
+    color: var(--secundary-grey);
+}
+
+.aritcle-A div {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    margin-top: 1rem;
+}
+
+.aritcle-A div p {
+    font-style: italic;
+    color: var(--secundary-grey);
+}
+
+.photo-A {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    margin-top: 2rem;      
+}
+
+.photo-A img {
+    width: 3rem;
+    border-radius: 50%;   
+}
+
+
+
+
+
+
+.aritcle-B h1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 80%;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 0.25rem;
+    align-self: end; 
+}
+
+.aritcle-B h1 + p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 70%;
+    margin: 0;
+    margin-top: 0.25rem;
+    align-self: start;
+    color: var(--secundary-grey);
+}
+
+.aritcle-B div {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.aritcle-B div p {
+    font-style: italic;
+    color: var(--secundary-grey);
+}
+
+.photo-B {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    margin-top: 0.5rem;      
+}
+
+.photo-B img {
+    width: 3rem;
+    border-radius: 50%;   
+}
+
+
+
+
+
+
+.aritcle-C h1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 80%;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 0.25rem;
+    align-self: end;
+    margin-top: 1rem; 
+}
+
+.aritcle-C h1 + p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 70%;
+    margin: 0;
+    margin-top: 0.25rem;
+    align-self: start;
+    color: var(--secundary-grey);
+}
+
+.aritcle-C div {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    margin-top: 1.1rem;
+}
+
+.aritcle-C div p {
+    font-style: italic;
+    color: var(--secundary-grey);
+}
+
+.photo-C {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    margin-top: 1.75rem;      
+}
+
+.photo-C img {
+    width: 3rem;
+    border-radius: 50%;   
+}
+
+
+
+
+
+
+
+
+
+.section-create {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.section-create h1 {
+    grid-column: 1 / 3;
+    justify-self: center;
+    font-size: 230%;
+}
+
+.button-C {
+    width: 17.5rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: end;
+    padding: 1rem 5rem;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+}
+
+.button-D {
+    width: 12.5rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 1rem 3rem;
+    background-color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    color: white;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.808);
+    margin-bottom: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 60%;
+    margin: 0 auto;
+    column-gap: 4rem;
+}
+
+footer .grttd {
+    color: white;
+    margin-top: 0.5rem;
+    margin-right: 4rem;
+    font-style: italic;
+}
+
+footer div h2 {
+    color: white;
+    font-size: 110%;
+}
+
+footer div nav a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 90%;
+    line-height: 190%;
+}
+
+footer div p {
+    color: white;
+    font-size: 90%;  
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .banner h2 {
+        margin-left: 2rem;
+        font-size: 150%;
+    }
+    .banner nav {
+        margin-right: 2rem;  
+    }
+    .banner nav a {
+        margin: 0 0.5rem;
+        font-size: 90%;
+    }
+
+
+    .get-inspired {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 2rem;
+        padding-bottom: 3rem; 
+    }
+    
+    .aritcle-A h1 {
+        margin-top: 0.5rem;
+    }
+    .aritcle-A div {
+        margin-top: 1.2rem;
+    }
+    
+    .photo-A {
+        margin-top: 1.5rem;
+    }
+
+    .aritcle-C div {
+        margin-top: 0.5rem;
+    }
+    .aritcle-C h1 {
+        margin-top: 1rem;
+    }
+    .photo-C {
+        margin-top: 1rem;
+    }
+
+
+    footer {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .container-footer {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        column-gap: 4rem;
+    }
+    
+    footer .grttd {
+        margin-top: 0.25rem;
+        margin-right: 4rem;
+        font-size: 150%;
+    }
+    
+    footer div h2 {
+        font-size: 82.5%;
+    }
+    
+    footer div nav a {
+        font-size: 67.5%;
+        line-height: 142.5%;
+    }
+    
+    footer div p {
+        font-size: 67.5%;
+        margin: 0.3rem 0;  
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner h2 {
+        margin-left: 2rem;
+        font-size: 130%;
+    }
+    .banner nav {
+        margin-right: 2rem;  
+    }
+    .banner nav a {
+        margin: 0 0.5rem;
+        font-size: 70%;
+    }
+
+
+    .get-inspired {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 1.5rem;
+        padding-bottom: 2rem; 
+    }
+    
+    .aritcle-A div {
+        margin-top: 1rem;
+    }
+    .photo-A {
+        margin-top: 1.4rem;
+    }
+
+    .photo-B {
+        margin-bottom: 0.5rem;
+    }
+
+    .aritcle-C div {
+        margin-top: 0.5rem;
+    }
+    .photo-C {
+        margin-top: 1.4rem;
+    }
+    .aritcle-C h1{
+        margin-top: 1.75rem;
+    }
+
+    
+    .container-footer {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        column-gap: 2rem;
+    }
+    
+    footer .grttd {
+        margin-top: 0.25rem;
+        margin-right: 3rem;
+        font-size: 150%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .button-C {
+        width: 15.5rem;
+        font-size: 70%;
+        padding: 1rem 3.66rem;
+    }
+    .button-D {
+        width: 10.5rem;
+        font-size: 70%;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner h2 {
+        margin-left: 1.5rem;
+        font-size: 100%;
+    }
+    .banner nav {
+        margin-right: 1.5rem;  
+    }
+    .banner nav a {
+        margin: 0 0.25rem;
+        font-size: 50%;
+    }
+
+
+    .get-inspired {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 1rem;
+        padding-bottom: 1.5rem; 
+    }
+    
+    .aritcle-A div {
+        margin-top: 0;
+    }
+    .photo-A {
+        margin-top: 1.5rem;
+    }
+
+    .photo-B {
+        margin-top: 0.5rem;
+    }
+
+    .aritcle-C div {
+        margin-top: 0;
+    }
+    .photo-C {
+        margin-top: 1.5rem;
+    }
+    .aritcle-C h1{
+        margin-top: 1.75rem;
+    }
+
+
+    .section-create h1 {
+        font-size: 200%;
+    }
+    .button-C {
+        width: 15rem;
+        font-size: 70%;
+        padding: 1rem 3.66rem;
+    }
+    .button-D {
+        width: 10rem;
+        font-size: 70%;
+        padding: 1rem 2rem;
+    }
+
+    
+    .container-footer {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        column-gap: 1rem;
+    }
+    
+    footer .grttd {
+        margin-top: 0.25rem;
+        margin-right: 1.5rem;
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 750px) {
+    .aritcle-A div {
+        margin-top: 0;
+    }
+    .photo-A {
+        margin-top: 0.5rem;
+    }
+
+    .photo-B {
+        margin-top: 0.5rem;
+    }
+
+    .aritcle-C div {
+        margin-top: 0;
+    }
+    .photo-C {
+        margin-top: 1.5rem;
+    }
+
+
+    .button-C {
+        width: 12.5rem;
+        font-size: 70%;
+        padding: 1rem 2.33rem;
+    }
+    .button-D {
+        width: 7.5rem;
+        font-size: 70%;
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        flex-wrap: wrap;
+    }
+    .banner h2 {
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 100%;
+    }
+    .banner nav {
+        width: fit-content;
+        margin: 0 auto;  
+    }
+    .banner nav a {
+        margin: 0 0.25rem;
+        font-size: 50%;
+    }
+
+
+    .get-inspired {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        column-gap: 1rem;
+        padding-bottom: 1.5rem; 
+    }
+
+
+    footer {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .container-footer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+    }
+    
+    footer .grttd {
+        margin-top: 0.25rem;
+        margin-right: 1.5rem;
+        font-size: 150%;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
+
+    footer div {
+        justify-self: center; 
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+        flex-wrap: wrap;
+        padding: 0.3rem 0.2rem;
+    }
+    .banner h2 {
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 100%;
+    }
+    .banner nav {
+        width: fit-content;
+        margin: 0 auto;  
+    }
+    .banner nav a {
+        margin: 0 0.03rem;
+        font-size: 50%;
+    }
+
+
+    .get-inspired {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        padding-bottom: 1.5rem; 
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .header h1 {
+        margin-top: 4rem; 
+        font-size: 250%;
+        margin-bottom: 1rem;
+    }
+    .header h1 + p {
+        font-size: 90%; 
+    }
+    .button-A {
+        padding: 0.66rem 2rem;
+        margin-bottom: 3rem;
+        font-size: 90%;
+    }
+
+
+    .section-daily-grat h1 {
+        font-size: 200%;
+        margin-bottom: 1rem;
+    }
+    .section-daily-grat h1 + p {
+        font-size: 90%;
+    }
+    .button-B {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding: 0.66rem 2rem;
+       font-size: 90%;   
+    }
+
+
+    .h1-koptext {
+        font-size: 200%;
+        margin-top: 3rem;
+        margin-bottom: 0;
+    }
+    
+    .p-text {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 90%;
+    }
+
+
+    .aritcle-A h1 {
+        font-size: 64%;
+        margin-bottom: 0.25rem;
+    }
+    .aritcle-A h1 + p {
+        font-size: 56%;
+        margin-top: 0.25rem;
+    }
+    .aritcle-A div {
+        margin-top: 1.3rem;
+    }
+    .aritcle-A div p {
+        font-size: 90%;
+    }
+    .photo-A {
+        margin-top: 1.5rem;
+    }
+
+
+    .aritcle-B h1 {
+        font-size: 80%;
+        margin-bottom: 0.25rem; 
+    }
+    .aritcle-B h1 + p {
+        font-size: 70%;
+        margin-top: 0.25rem;
+    }
+
+    .aritcle-C h1 {
+        font-size: 64%;
+        margin-bottom: 0.25rem; 
+    }
+    .aritcle-C h1 + p {
+        font-size: 65%;
+        margin-top: 0.25rem;
+    }
+    .aritcle-C div {
+        margin-top: 1.1rem;
+    }
+    .aritcle-C div p {
+        font-size: 90%;
+    }
+    .aritcle-C h1{
+        margin-top: 1rem;
+    }
+    .photo-C {
+        margin-top: 1rem;
+    }
+
+
+    .section-create h1 {
+        font-size: 184%;
+    }
+
+    .button-C {
+        width: 12.5rem;
+        font-size: 70%;
+        padding: 1rem 1rem;
+    }
+    .button-D {
+        width: 7.5rem;
+        font-size: 70%;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .header h1 {
+        margin-top: 3rem; 
+        font-size: 200%;
+        margin-bottom: 0.75rem;
+    }
+    .header h1 + p {
+        font-size: 70%; 
+    }
+    .button-A {
+        padding: 0.33rem 1rem;
+        margin-bottom: 2rem;
+        font-size: 70%;
+    }
+
+
+    .section-daily-grat h1 {
+        font-size: 180%;
+        margin-bottom: 0.75rem;
+    }
+    .section-daily-grat h1 + p {
+        font-size: 75%;
+    }
+    .button-B {
+        margin-top: 0.66rem;
+        margin-bottom: 2rem;
+        padding: 0.33rem 1rem;
+       font-size: 70%;   
+    }
+
+
+    .h1-koptext {
+        font-size: 180%;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .p-text {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 75%;
+    }
+
+
+    .aritcle-A {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .aritcle-A h1 {
+        font-size: 64%;
+        margin-bottom: 0.25rem; 
+    }
+    .aritcle-A h1 + p {
+        font-size: 56%;
+        margin-top: 0.25rem;
+    }
+    .aritcle-A div {
+        margin-top: 0;
+    }
+    .aritcle-A div p {
+        font-size: 90%;
+    }
+
+    .aritcle-B {
+        margin-top: 1rem;
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    
+    }
+    .aritcle-B h1 {
+        font-size: 80%;
+        margin-bottom: 0.25rem; 
+    }
+    .aritcle-B h1 + p {
+        font-size: 70%;
+        margin-top: 0.25rem;
+    }
+
+    .aritcle-C {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+    .aritcle-C h1 {
+        font-size: 64%;
+        margin-bottom: 0.25rem; 
+    }
+    .aritcle-C h1 + p {
+        font-size: 65%;
+        margin-top: 0.25rem;
+    }
+    .aritcle-C div {
+        margin-top: 0;
+    }
+    .aritcle-C div p {
+        font-size: 90%;
+    }
+
+
+    .section-create h1 {
+        font-size: 170%;
+        text-align: center;
+    }
+    .button-C {
+        width: 10rem;
+        font-size: 70%;
+        padding: 0.33rem 1rem;
+    }
+    .button-D {
+        width: 6rem;
+        font-size: 70%;
+        padding: 0.33rem 0.33rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .header h1 {
+        margin-top: 2rem; 
+        font-size: 150%;
+        margin-bottom: 0.5rem;
+    }
+    .header h1 + p {
+        font-size: 50%; 
+    }
+    .button-A {
+        padding: 0.1515rem 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 50%;
+    }
+
+
+    .section-daily-grat h1 {
+        font-size: 135%;
+        margin-bottom: 0.5rem;
+    }
+    .section-daily-grat h1 + p {
+        font-size: 75%;
+    }
+    .button-B {
+        margin-top: 0.405rem;
+        margin-bottom: 1rem;
+        padding: 0.1515rem 0.5rem;
+       font-size: 50%;   
+    }
+
+
+    .h1-koptext {
+        font-size: 135%;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .p-text {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 75%;
+    }
+
+
+    .aritcle-A {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        justify-items: center;
+        text-align: center;
+    }
+    .aritcle-A h1 {
+        font-size: 64%;
+        margin-bottom: 0.25rem; 
+    }
+    .aritcle-A h1 + p {
+        font-size: 56%;
+        margin-top: 0.25rem;
+    }
+    .aritcle-A div {
+        margin-top: 0;
+    }
+    .aritcle-A div p {
+        font-size: 90%;
+    }
+
+    .aritcle-B {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        justify-items: center;
+        text-align: center;
+    }
+    .aritcle-B h1 {
+        font-size: 80%;
+        margin-bottom: 0.25rem; 
+    }
+    .aritcle-B h1 + p {
+        font-size: 70%;
+        margin-top: 0.25rem;
+    }
+
+    .aritcle-C {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        justify-items: center;
+        text-align: center;
+    }
+    .aritcle-C h1 {
+        font-size: 64%;
+        margin-bottom: 0.25rem; 
+    }
+    .aritcle-C h1 + p {
+        font-size: 65%;
+        margin-top: 0.25rem;
+    }
+    .aritcle-C div {
+        margin-top: 0;
+    }
+    .aritcle-C div p {
+        font-size: 90%;
+    }
+
+
+    .section-create h1 {
+        margin-top: 0;
+        font-size: 140%;
+        text-align: center;
+    }
+    .button-C {
+        width: 7.5rem;
+        font-size: 50%;
+        padding: 0.33rem 1rem;
+    }
+    .button-D {
+        width: 5rem;
+        font-size: 50%;
+        padding: 0.33rem 0.33rem;
+    }
+}
+
+
+
+
+
+
+
+
+
